@@ -1,0 +1,49 @@
+{
+  "name": "@geut/template-module",
+  "version": "1.0.0",
+  "description": "Template to create modules following the Geut path",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "posttest": "npm run lint",
+    "lint": "eslint **/*.js",
+    "version": "chan release ${npm_package_version} && git add .",
+    "prepublish": "npm test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@geut/chan": "^1.3.0",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/samples/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geut/template-module.git"
+  },
+  "keywords": [
+    "template",
+    "geut",
+    "module"
+  ],
+  "author": {
+    "name": "GEUT",
+    "email": "contact@geutstudio.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geut/template-module/issues"
+  },
+  "homepage": "https://github.com/geut/template-module#readme"
+}
