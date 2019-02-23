@@ -9,11 +9,9 @@
 ## <a name="install"></a> Install
 
 ```
-```
-
-## <a name="usage"></a> Usage
-
-```
+$ npm init @geut/module <moduleName>
+$ cd <moduleName>
+$ npm install
 ```
 
 ## <a name="issues"></a> Issues
