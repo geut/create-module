@@ -1,4 +1,4 @@
-# Contributing to template-module
+# Contributing to create-module
 
 ## Issue Contributions
 
@@ -13,13 +13,13 @@ This document will guide you through the contribution process.
 
 ### Step 1: Fork
 
-Fork the project [on GitHub](https://github.com/geut/template-module) and check out your copy locally.
+Fork the project [on GitHub](https://github.com/geut/create-module) and check out your copy locally.
 
 ```bash
-$ git clone git@github.com:username/template-module.git
-$ cd template-module
+$ git clone git@github.com:username/create-module.git
+$ cd create-module
 $ npm install
-$ git remote add upstream git://github.com/geut/template-module.git
+$ git remote add upstream git://github.com/geut/create-module.git
 ```
 
 ### Step 2: Branch

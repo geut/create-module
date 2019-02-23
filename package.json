@@ -1,13 +1,16 @@
 {
-  "name": "@geut/template-module",
+  "name": "@geut/create-module",
   "version": "1.0.0",
   "description": "Template to create modules following the Geut path",
   "main": "index.js",
+  "bin": {
+    "create-module": "create-module.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "jest",
     "posttest": "npm run lint",
-    "lint": "eslint **/*.js",
+    "lint": "eslint \"**/*.js\"",
     "version": "chan release ${npm_package_version} && git add .",
     "prepublish": "npm test"
   },
@@ -30,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geut/template-module.git"
+    "url": "git+https://github.com/geut/create-module.git"
   },
   "keywords": [
-    "template",
+    "create",
     "geut",
     "module"
   ],
@@ -43,7 +46,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geut/template-module/issues"
+    "url": "https://github.com/geut/create-module/issues"
   },
-  "homepage": "https://github.com/geut/template-module#readme"
+  "homepage": "https://github.com/geut/create-module#readme"
 }
