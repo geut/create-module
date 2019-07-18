@@ -2,6 +2,10 @@
 const fs = require('fs')
 const path = require('path')
 
+function log (message) {
+  console.log(`@geut/create-module - ${message}`)
+}
+
 function mkdir (dir) {
   try {
     fs.mkdirSync(dir, { recursive: true, mode: 0o755 })
@@ -25,7 +29,13 @@ function copyDir (src, dest) {
       const symlink = fs.readlinkSync(path.join(src, files[i]))
       fs.symlinkSync(symlink, path.join(dest, files[i]))
     } else {
-      fs.copyFileSync(path.join(src, files[i]), path.join(dest, files[i]))
+      let filename = files[i]
+      if (filename.startsWith('_')) {
+        filename = '.' + filename.slice(1)
+      }
+      const pathname = path.join(dest, filename)
+      fs.copyFileSync(path.join(src, files[i]), pathname)
+      log(`Copy ${pathname}`)
     }
   }
 }
@@ -45,8 +55,6 @@ function dirIsEmpty (directory) {
 function editFile (filepath, transform) {
   fs.writeFileSync(filepath, transform(fs.readFileSync(filepath)))
 }
-
-const log = message => console.log(`@geut/create-module - ${message}`)
 
 const moduleName = process.argv[2]
 
