@@ -9,7 +9,7 @@
     "posttest": "npm run lint",
     "lint": "eslint \"**/*.js\"",
     "version": "chan release ${npm_package_version} && git add .",
-    "prepublish": "npm test"
+    "prepublishOnly": "npm test"
   },
   "dependencies": {},
   "devDependencies": {
@@ -23,9 +23,8 @@
     "jest": "^24.8.0"
   },
   "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/tests/samples/"
+    "testMatch": [
+      "**/tests/**/*.test.js"
     ]
   },
   "repository": {
