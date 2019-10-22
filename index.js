@@ -30,7 +30,9 @@ function copyDir (src, dest) {
       fs.symlinkSync(symlink, path.join(dest, files[i]))
     } else {
       let filename = files[i]
-      if (filename.startsWith('_')) {
+      if (filename === '_package.json') {
+        filename = 'package.json'
+      } else if (filename.startsWith('_')) {
         filename = '.' + filename.slice(1)
       }
       const pathname = path.join(dest, filename)
