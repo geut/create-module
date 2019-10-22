@@ -3,29 +3,33 @@
   "version": "1.0.0",
   "description": "Template to create modules following the Geut path",
   "main": "index.js",
+  "files": [
+    "lib",
+    "bin",
+    "index.js"
+  ],
   "scripts": {
     "start": "node index.js",
     "test": "jest --passWithNoTests",
     "posttest": "npm run lint",
-    "lint": "eslint \"**/*.js\"",
+    "lint": "xd-ns \"**/*.js\"",
     "version": "chan release ${npm_package_version} && git add .",
     "prepublishOnly": "npm test"
   },
   "dependencies": {},
   "devDependencies": {
     "@geut/chan": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
+    "@geut/xd": "^1.5.0",
+    "standard": "^14.3.1",
     "jest": "^24.8.0"
   },
   "jest": {
     "testMatch": [
       "**/tests/**/*.test.js"
     ]
+  },
+  "standard": {
+    "env": ["jest", "node", "browser"]
   },
   "repository": {
     "type": "git",
