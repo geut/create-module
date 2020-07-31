@@ -5,6 +5,7 @@
   "main": "index.js",
   "files": [
     "lib",
+    "src",
     "bin",
     "index.js"
   ],
