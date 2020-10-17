@@ -1,7 +1,7 @@
 # <moduleName>
 Template to create modules following the :snail: **GEUT** path
 
-[![Build Status](https://travis-ci.com/geut/<moduleName>.svg?branch=master)](https://travis-ci.com/geut/<moduleName>)
+[![Build Status](https://travis-ci.com/geut/<moduleName>.svg?branch=main)](https://travis-ci.com/geut/<moduleName>)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -23,7 +23,7 @@ Template to create modules following the :snail: **GEUT** path
 
 ## Contributing
 
-:busts_in_silhouette: Ideas and contributions to the project are welcome. You must follow this [guideline](https://github.com/geut/<moduleName>/blob/master/CONTRIBUTING.md).
+:busts_in_silhouette: Ideas and contributions to the project are welcome. You must follow this [guideline](https://github.com/geut/<moduleName>/blob/main/CONTRIBUTING.md).
 
 ## License
 
