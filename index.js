@@ -79,6 +79,10 @@ try {
       })
     })
 
+    editFile(path.join(dest, 'LICENSE'), data => {
+      return data.toString('utf-8').replace(/<year>/gi, new Date().getFullYear())
+    })
+
     log('Module created.')
   } else {
     log('Destination directory is not empty.')
