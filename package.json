@@ -32,10 +32,5 @@
   "bugs": {
     "url": "https://github.com/geut/create-module/issues"
   },
-  "homepage": "https://github.com/geut/create-module#readme",
-  "standard": {
-    "env": [
-      "jest"
-    ]
-  }
+  "homepage": "https://github.com/geut/create-module#readme"
 }
