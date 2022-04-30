@@ -2,6 +2,7 @@
   "name": "@geut/<moduleName>",
   "version": "0.0.1",
   "description": "Template to create modules following the Geut path",
+  "type": "module",
   "main": "index.js",
   "files": [
     "lib",
@@ -11,7 +12,7 @@
   ],
   "scripts": {
     "start": "node index.js",
-    "test": "jest --passWithNoTests",
+    "test": "uvu",
     "posttest": "npm run lint",
     "lint": "standard",
     "version": "chan release --allow-yanked ${npm_package_version} && git add .",
@@ -19,17 +20,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@geut/chan": "^2.0.0",
-    "standard": "^16.0.3",
-    "jest": "^24.8.0"
-  },
-  "jest": {
-    "testMatch": [
-      "**/tests/**/*.test.js"
-    ]
+    "@geut/chan": "^3.0.0",
+    "standard": "^17.0.0",
+    "uvu": "^0.5.3"
   },
   "standard": {
-    "env": ["jest", "node", "browser"]
+    "env": ["node", "browser"]
   },
   "repository": {
     "type": "git",

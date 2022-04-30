@@ -1,9 +1,8 @@
 # create-module
 Template to create modules following the :snail: **GEUT** path
 
-[![Build Status](https://travis-ci.com/geut/create-module.svg?branch=main)](https://travis-ci.com/geut/create-module)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat)](https://standardjs.com)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat)](https://github.com/RichardLitt/standard-readme)
 
 [![Made by GEUT][geut-badge]][geut-url]
 
