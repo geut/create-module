@@ -10,10 +10,9 @@
     "start": "node index.js",
     "test": "standard"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@geut/chan": "^2.0.0",
-    "standard": "^16.0.3"
+    "@geut/chan": "^3.2.6",
+    "standard": "^17.0.0"
   },
   "repository": {
     "type": "git",
